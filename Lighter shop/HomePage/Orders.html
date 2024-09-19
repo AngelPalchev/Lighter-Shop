@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+    <style>
+        .order-div {
+            border: 1px solid #000;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Orders Received</h1>
+    <div id="ordersContainer"></div>
+
+    <script>
+        // Retrieve the array of orders from localStorage
+        let orders = JSON.parse(localStorage.getItem('orders')) || [];
+
+        // Get the container where the orders will be displayed
+        let ordersContainer = document.getElementById('ordersContainer');
+
+        // Loop through each order and create a div for it
+        orders.forEach(function(order, index) {
+            // Create a new div element
+            let orderDiv = document.createElement('div');
+            orderDiv.className = 'order-div';
+
+            // Add the order details to the div
+            orderDiv.innerHTML = `
+                <h2>Order ${index + 1}     ${order.OrderTime}</h2>
+                <p>First Name: ${order.FirstName}</p>
+                <p>Last Name: ${order.LastName}</p>
+                <p>Address: ${order.Address}</p>
+                <p>Email: ${order.Email}</p>
+                <p>Phone Number: ${order.PhoneNumber}</p>
+                <p>Products: $(order.Products)</p>
+            `;
+
+            // Append the div to the container
+            ordersContainer.appendChild(orderDiv);
+        });
+    </script>
+</body>
+</html>
+
+

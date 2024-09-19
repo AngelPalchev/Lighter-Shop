@@ -1,0 +1,154 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    overflow-x: hidden;
+    padding: 1.5em;
+    background-color: rgba(164, 98, 45, 0.265);
+}
+nav {
+    box-shadow: 4px 5px 10px 0px rgb(85, 46, 9);
+    height: 7vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* This ensures that the content is vertically centered */
+    border-radius: 0.2em;
+    width: 90vw;
+    background-color: rgba(164, 98, 45, 0.265);
+    position: fixed;
+    top: 2%;
+    margin-left: 1.8vw;
+}
+
+nav a, img {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 0 1em; /* Add padding to give space between links */
+    height: 100%;
+    width:100%;
+    text-wrap: nowrap;
+    letter-spacing: 0.5em; /* Adjust letter-spacing as needed */
+    font-weight: 1000;
+    font-size: 1.5em;
+    display: flex; /* Flexbox on the link itself */
+    align-items: center; /* Center text vertically inside the link */
+    justify-content: center;
+}
+nav img{
+    width:10%;
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.139);
+}
+main{
+    background-color: rgba(164, 98, 45, 0.265);
+    height:100vh;
+    margin-top: 2em;
+    text-align: center;
+    width: 100%;
+    padding: 1em;
+    overflow: hidden;
+    width: 97.5%;
+}
+p{
+    font-size: 1.2em;
+}
+h1{
+    font-size: 3em;
+}
+.images{
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+.images img{
+    width:40vw;
+    height: 60vh;
+    right:0;
+    transition: 0.5s ease;
+}
+.images img:hover{
+    transform: scale(1.1);
+    filter: invert(100%);
+}
+.products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2em
+}
+.product{
+    background-color: rgba(164, 98, 45, 0.265);
+    border-radius: 1em;
+    padding: 2em 2em 0.3em 2em;
+    box-shadow: 2px 2px 2px 2px rgba(75, 35, 4, 0.5);
+}
+.product img{
+    width: 20vw;
+    background-color:transparent;
+    border-radius:  1em;
+    margin-bottom: 0.5em;
+    overflow: hidden;
+    transition: 0.6s ease;
+}
+.ph1{
+    text-align: center;
+}
+.title{
+    text-align: center;
+    font-weight: 550;
+    font-size: 0.9em;
+    color: rgb(60, 33, 5);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.standart:hover{
+    transform: scale(1.1);
+}
+.wooden:hover{
+    transform: scale(1.1);
+}
+.overflow{
+    background-color: rgba(116, 47, 17, 0.537);
+    border-radius:  1em;
+    margin-bottom: 0.5em;
+    overflow: hidden;
+    border: 1.8px solid rgb(255, 255, 255);
+    transition: 0.6s ease;
+}
+.overflow:hover{
+    background: linear-gradient(to bottom, rgba(218, 142, 44, 0.3), rgba(135, 84, 18, 0.7));
+}
+.small-zippo{
+    width: 20vw;
+    background-color:transparent;
+    border-radius:  1em;
+    margin-bottom: 0.5em;
+    overflow: hidden;
+    transform: scale(1.5);
+    transition: 0.6s ease;
+}
+.small-zippo:hover{
+    transform: scale(1.6);
+}
+.product-labels{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+}
+.price{
+
+    text-align: center;
+    font-weight: 550;
+    font-size: 1.1em;
+    color: rgb(93, 48, 6);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+a{
+    text-decoration: none;
+}

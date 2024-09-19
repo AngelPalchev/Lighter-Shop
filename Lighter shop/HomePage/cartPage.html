@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <nav>
+        <img src="images/1-removebg-preview.png" alt="Logo">
+        <a href="index.html">Home</a>
+        <a href="#">About Us</a>
+        <i onclick="navigateToCart()" class="fa-solid fa-cart-shopping cartIcon"></i>
+        <div id="circleContainer"></div>
+      </nav>
+      <br>
+      <br>
+    <h1>Your Cart</h1>
+    <main>
+    <div class="items-total">
+      <div id="cartContainer"></div>
+      <h2 id="fp"></h2>
+    </div>
+    <form>
+      <h3>Order</h2>
+        <div class="form-group">
+          <input type="text" id="firstName" name="name" placeholder=" " required>
+          <label for="name">First Name</label>
+        </div>
+      <div class="form-group">
+        <input type="text" id="lastName" name="name" placeholder=" " required>
+        <label for="name">Last Name</label>
+      </div>
+      <div class="form-group">
+        <input type="text" id="address" name="name" placeholder=" " required>
+        <label for="name">Address</label>
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" name="email" placeholder=" " required>
+        <label for="name">E-mail</label>
+      </div>
+      <div class="form-group">
+        <input type="tel" id="phone-number" min="10" max="10" name="telephone" placeholder=" " required>
+        <label for="name">Phone Number</label>
+      </div>
+      <button id="ChkOut">Check Out</button>
+  </form>
+  </main>
+    <script src="cart.js"></script>
+</body>
+</html>

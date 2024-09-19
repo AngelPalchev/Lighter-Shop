@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Standart Zippo</title>
+  <link rel="stylesheet" href="styles1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <img src="images/1-removebg-preview.png" alt="Logo">
+    <a href="index.html">Home</a>
+    <a href="#">About Us</a>
+    <i onclick="navigateToCart()" class="fa-solid fa-cart-shopping cartIcon"></i>
+    <div id="circleContainer"></div>
+  </nav>
+
+  <!-- Spacer to account for fixed navbar -->
+  <div class="nav-spacer"></div>
+<br>
+<br>
+<br>
+  <!-- Main Content Wrapper -->
+  <div class="whole">
+    <!-- Image Gallery -->
+    <div class="gallery">
+      <div class="big-img">
+        <img id="currentImage" src="images/premium-star-lighter-gold-high-polished-6298-1-p.png" alt="Main Image">
+      </div>
+      <div class="tabs">
+        <img class="small active" src="images/premium-star-lighter-gold-high-polished-6298-1-p.png" alt="Thumbnail 1">
+        <img class="small" src="images/Screenshot_2024-08-19_134545-removebg-preview.png" alt="Thumbnail 2">
+      </div>
+    </div>
+
+    <!-- Product Details -->
+    <div class="text">
+      <h1>Standart Zippo, Golden Shell</h1>
+      <div class="price-btn">
+        <h2>$21.99</h2> 
+        <button id="btn" 
+        class="add-to-cart"
+        data-product-id="003"
+        data-product-name="Small Zippo, Golden Shell"
+        data-product-price="17.99"
+        data-product-image="images/R03802860_GOLD_ALT01__1_-removebg-preview.png">
+        Buy
+        </button>
+      </div>
+      <p class="description">
+        The Uncovered Zippo with a Wooden Shell is a striking blend of tradition and nature. Crafted with a durable metal core, this lighter features a unique wooden exterior that adds a rustic touch to its iconic design. The natural wood grain provides a comfortable grip and a one-of-a-kind appearance, making each piece distinct. Its reliable windproof flame ensures functionality in any weather condition. This Zippo is perfect for those who appreciate both craftsmanship and natural beauty. Over time, the wood develops a rich patina, enhancing its character. Whether for personal use or as a gift, this lighter is a stylish and functional accessory. Embrace the elegance of nature with the durability of a classic Zippo.
+      </p>
+    </div>
+  </div>
+    <script src="script1.js"></script>
+</body>
+</html>

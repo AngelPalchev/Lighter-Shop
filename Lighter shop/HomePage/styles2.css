@@ -1,0 +1,192 @@
+body {
+    overflow-x: hidden;
+    padding: 1.5em;
+    background-color: rgba(164, 98, 45, 0.265);
+    width:100vw;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+nav {
+    box-shadow: 4px 5px 10px 0px rgb(85, 46, 9);
+    height: 7vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.2em;
+    width: 90vw;
+    background-color: rgba(164, 98, 45, 0.265);
+    position: fixed;
+    top: 2%;
+    margin-left: 1.8vw;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 0 1em; 
+    height: 100%;
+    width:100%;
+    text-wrap: nowrap;
+    letter-spacing: 0.5em; 
+    font-weight: 1000;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+nav img{
+    width:10%;
+}
+i{
+    margin: 2em 1em 2em 2em;
+    font-size: 1.3em;
+    transition: 0.4s ease;
+}
+nav i:hover{
+    color: white;
+    cursor: pointer;
+   transform: scale(1.2);
+}
+nav a.cart{
+    width: auto;
+}
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.139);
+}
+h1{
+    margin-left: 30vw;
+    margin-bottom: 3vh;
+    color: rgba(74, 26, 11, 0.345);
+    text-shadow: 2px 2px 1px 1px;
+}
+main{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+
+}
+.cart-item {
+    display: flex;
+    align-items: center;
+    flex-direction:row;
+    margin-bottom: 3vh;
+    margin-right: 5vw;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    width: 70%;
+    margin-left: 4vw;
+    background-color: #8a471e38;
+    border-radius: 10px;
+    box-shadow: 2px 1px 0px 2px rgba(51, 16, 2, 0.311);
+}
+
+.cart-item img {
+    width: 7vw;
+    height: 15vh;
+    margin-right: 10px;
+}
+.cart-item span {
+    margin-right: 1em;
+    font-size: 1.4em;
+    text-align: center;
+}
+.cart-item span1 {
+    margin-right: 1em;
+    font-weight: 700;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.cart-item input {
+    width: 60px;
+}
+.cart-item price{
+    font-weight: 700;
+}
+.delete-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.delete-button:hover {
+    background-color: #c0392b;
+}
+#fp{
+    margin-left: 4vw;
+    background-color: #7f4d2e90;
+    width:17vw;
+    border-radius: 5px;
+    color: rgb(60, 28, 18);
+    padding-left: 5px;
+    font-weight: 700;
+    text-wrap: nowrap;
+}
+form{
+    padding: 10px;
+    background-color:#8a471e38;
+    border-radius: 10px;
+    box-shadow: 2px 1px 0px 2px rgba(51, 16, 2, 0.311);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10vh;
+    margin-left: 2vw;
+}
+.form-group {
+    position: relative;
+    margin: 7px 0;
+}
+
+input[type="text"], input[type="email"],input[type="tel"] {
+    width: 100%;
+    padding: 12px 12px 12px 8px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+label {
+    position: absolute;
+    top: 40%;
+    left: 8px;
+    transform: translateY(-10%);
+    font-size: 1em;
+    color: #aaa;
+    pointer-events: none; 
+    transition: all 0.2s ease-out;
+    background: transparent;
+    padding: 0 4px; 
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 4px;
+    font-size: 0.75em;
+    color: #000000;
+    background-color: transparent; 
+}
+
+input:focus {
+    outline: none;
+}
+h3{
+  text-align: center;
+  font-weight: 700;
+}
+button{
+    background-color: #29120338;
+    border: none;
+    margin-top:10px;
+    font-size: 1.1em;
+    width: 50%;
+    margin-left: 23%;
+    border-radius: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

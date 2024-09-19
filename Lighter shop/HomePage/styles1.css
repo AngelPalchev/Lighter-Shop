@@ -1,0 +1,145 @@
+body {
+    overflow-x: hidden;
+    padding: 1.5em;
+    background-color: rgba(164, 98, 45, 0.265);
+}
+nav {
+    box-shadow: 4px 5px 10px 0px rgb(85, 46, 9);
+    height: 7vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.2em;
+    width: 90vw;
+    background-color: rgba(164, 98, 45, 0.265);
+    position: fixed;
+    top: 2%;
+    margin-left: 1.8vw;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 0 1em; 
+    height: 100%;
+    width:100%;
+    text-wrap: nowrap;
+    letter-spacing: 0.5em; 
+    font-weight: 1000;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+nav img{
+    width:10%;
+}
+i{
+    margin: 2em 1em 2em 2em;
+    font-size: 1.3em;
+    transition: 0.4s ease;
+}
+nav i:hover{
+    color: white;
+    cursor: pointer;
+   transform: scale(1.2);
+}
+nav a.cart{
+    width: auto;
+}
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.139);
+}
+.whole {
+    display: flex;
+    flex-direction: row; /* Change to row to align items horizontally */
+    gap: 1em; /* Optional: Add some space between the gallery and text */
+}
+
+.tabs{
+    display: flex;
+    flex-direction: column;
+    gap:0.4em;
+}
+.tabs img{
+    width: 7vw;
+    height: 15vh;
+    opacity: 80%;
+    filter: grayscale(30%);
+    transition: 0.1s ease;
+    border-radius: 1.5em;
+}
+.tabs img:hover{
+    opacity: 1;
+    filter: none;
+    transform: scale(1.05);
+}
+#currentImage{
+    width: 30vw;
+    height: 60vh;
+    border-radius: 3.5em;
+}
+.gallery{
+    padding: 1em;
+    display: flex;
+    gap: 0.1em;
+    background-color: rgba(121, 61, 12, 0.05);
+    border-radius: 0.7em;
+    box-shadow: 4px 4px 2px 2px rgba(75, 35, 4, 0.201);
+}
+.text {
+    padding-left: 1.2em;
+    color: rgb(93, 48, 6);
+ /* Center the text vertically */
+}
+.price-btn{
+    display:inline;
+    align-items: center;
+}
+button{
+    height:5vh;
+    width: 7vw;
+    background-color: rgba(196, 96, 54, 0.584);
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+    font-weight: 700;
+}
+p{
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 1.15em;
+}
+#currentImage {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1;
+}
+#circleContainer {
+    position: relative;
+    display: inline-block;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(159, 76, 37);
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -5px; /* Adjust to position the circle relative to the cart icon */
+    right: -5px; /* Adjust to position the circle relative to the cart icon */
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 0.3em;
+}
